@@ -1,0 +1,17 @@
+{% extends "comedy/base.html" %}
+{% load social_share %}
+{% block title %}{{ art.headline }} | The Fool's Cap{% endblock %}
+
+{% block content %}
+  <h2 class="section-header">{{ art.art_cats }}</h2>
+  <hr />
+  <div class="text-center">
+   <img src="{{ art.pic.url }}" class="img-fluid">
+  </div>
+  <h1 class="title">{{ art.headline }}</h1>
+    <p>{{ art.pub_date|date:"F j, Y" }}</p>
+    <p class="article">{{ art.content|linebreaksbr }}</p>
+  <div class="row" id="social">
+   {% post_to_facebook  object_or_url %}{% post_to_gplus object_or_url %}{% post_to_twitter object_or_url  %}
+  </div>
+{% endblock %}

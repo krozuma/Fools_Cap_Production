@@ -1,0 +1,96 @@
+a {
+  color: #212529;
+}
+
+#secondary {
+  display: inline;
+  margin-right: 6px;
+  padding-right: 8px;
+  margin-left: 12px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.col-sm-3 {
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.title-two {
+  text-align: center;
+  font-size: 20px;
+}
+
+#masthead {
+  justify-content: center;
+}
+
+#name {
+  font-family: 'Special Elite', cursive;
+  margin-top: 0.5em;
+  font-size: 50px;
+}
+
+#moto {
+  font-family: 'Zilla Slab', serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.firstline {
+  width: 97%;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.img-fluid {
+  max-width: 20em;
+  max-height: 20em;
+}
+
+.img-second {
+  max-width: 15em;
+  max-height: 15em;
+}
+
+.sectionHead {
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 2em;
+}
+
+#social {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 35px;
+  display: inline-block;
+} 
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.card-footer {
+  background-color: #529B45;
+}
+
