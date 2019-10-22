@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_social_share',
     'django_filters',
-    'google_analytics', 
+    'google_analytics',
+    "compressor",  
 ]
 
 #For Google Analytics
@@ -76,6 +77,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
 
 # Key in `CACHES` dict
 CACHE_MIDDLEWARE_ALIAS = 'default'

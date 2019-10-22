@@ -1,4 +1,5 @@
 {% load static %}
+{% load compress %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  {% compress css %} 
   <link rel="stylesheet" type="text/css" href="{% static '/comedy/style.css' %}">
+  {% endcompress %}
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="pt-2">
