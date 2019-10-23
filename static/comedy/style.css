@@ -59,8 +59,8 @@ a:hover {
 }
 
 .img-fluid {
-  max-width: 20em;
-  max-height: 20em;
+  max-width: 18em;
+  max-height: 18em;
 }
 
 .img-second {
@@ -84,7 +84,7 @@ a:hover {
 .fa {
   font-size: 35px;
   display: inline-block;
-} 
+}
 
 .fa:hover {
   opacity: 0.7;
@@ -93,4 +93,3 @@ a:hover {
 .card-footer {
   background-color: #529B45;
 }
-
